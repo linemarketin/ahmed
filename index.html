@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    
+    <!-- Google tag (gtag.js) - كود التتبع الجديد -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11248543839"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-11248543839');
+    </script>
+
+    <!-- Event snippet for نقرة صادرة إلى الخارج conversion page -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-11248543839/IJcuCJuGi7ocEN_Q3PMp',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+
+    <!-- دالة معالجة مكالمات الهاتف بشكل آمن مع تتبع التحويل -->
+    <script>
+    function makePhoneCall(phoneNumber) {
+      var cleanNumber = String(phoneNumber).replace(/[\s\-]/g, '');
+      if (!cleanNumber.startsWith('+') && !cleanNumber.startsWith('00')) {
+        if (cleanNumber.startsWith('965')) {
+          cleanNumber = '+' + cleanNumber;
+        } else {
+          cleanNumber = '+965' + cleanNumber;
+        }
+      }
+      var telUrl = 'tel:' + cleanNumber;
+      
+      if (typeof gtag_report_conversion === 'function') {
+        gtag_report_conversion(telUrl);
+      }
+      
+      setTimeout(function() {
+        window.location.href = telUrl;
+      }, 100);
+      
+      return false;
+    }
+
+    function trackWhatsAppClick(url) {
+      if (typeof gtag_report_conversion === 'function') {
+        gtag_report_conversion(url);
+      }
+      setTimeout(function() {
+        window.open(url, '_blank');
+      }, 100);
+      return false;
+    }
+    </script>
+
+    <!-- بيانات منظمة لتحسين SEO لخدمات الصباغة والديكور -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HomeAndConstructionBusiness",
+        "name": "صباغ الكويت - شركة فرصة للصباغة والديكور",
+        "description": "أفضل صباغ في الكويت، صباغ خارجي وداخلي، اصباغ وديكورات في جميع مناطق الكويت. دهانات حديثة، ديكورات جبس، ورق جدران، عزل حراري ومائي. اتصل الآن 60725004.",
+        "telephone": "+96560725004",
+        "areaServed": "Kuwait",
+        "serviceType": "صباغ الكويت, صباغ خارجي, صباغ داخلي, اصباغ وديكورات, دهانات, ديكورات جبس, ورق جدران",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "Kuwait"
+        },
+        "openingHours": "Mo-Su 08:00-22:00"
+    }
+    </script>
+
+    <title>صباغ الكويت | أفضل صباغ خارجي وداخلي | شركة فرصة 60725004</title>
+    <meta name="description" content="أفضل صباغ في الكويت ✓ صباغ خارجي وداخلي ✓ اصباغ وديكورات ✓ دهانات حديثة ✓ ديكورات جبس ✓ ورق جدران ✓ عزل حراري ومائي ✓ جميع مناطق الكويت ✓ اتصل الآن 60725004">
+    <meta name="keywords" content="صباغ الكويت, صباغ, صباغ خارجي, صباغ داخلي, اصباغ وديكورات, دهانات الكويت, ديكورات جبس, ورق جدران, عزل حراري, صباغ شقق, صباغ فلل">
+    <meta name="location" content="Kuwait">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-blue: #1A3A4A;
+            --dark-blue: #0F2838;
+            --light-blue: #E6F0F5;
+            --accent-gold: #D4A373;
+            --accent-teal: #6B8C9E;
+            --clean-white: #FFFFFF;
+            --soft-gray: #F4F8FA;
+            --text-dark: #1E2F3D;
+            --call-green: #28A745;
+            --whatsapp-green: #25D366;
+            --highlight-yellow: #F9A825;
+            --brand-gradient: linear-gradient(135deg, #1A3A4A, #6B8C9E);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        body {
+            background: var(--soft-gray);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        
+        .scrolling-banner {
+            background: var(--dark-blue);
+            color: white;
+            padding: 12px 0;
+            overflow: hidden;
+            font-weight: 700;
+            font-size: 0.9rem;
+            border-bottom: 3px solid var(--accent-gold);
+        }
+        
+        .scrolling-content {
+            display: inline-block;
+            white-space: nowrap;
+            animation: scroll 22s linear infinite;
+            padding-left: 100%;
+        }
+        
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+        
+        .navbar {
+            background: var(--primary-blue);
+            color: white;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.25);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            color: #fff;
+            font-weight: 900;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+        }
+        .logo span {
+            color: var(--accent-gold);
+        }
+        
+        .phone-display {
+            color: white;
+            font-weight: 700;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            transition: transform 0.2s;
+            background: rgba(255,255,255,0.15);
+            padding: 0.5rem 1.2rem;
+            border-radius: 50px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .phone-display:hover {
+            transform: scale(1.05);
+            background: rgba(255,255,255,0.25);
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #1A3A4A, #0F2838);
+            color: white;
+            padding: 6rem 2rem 8rem;
+            text-align: center;
+            min-height: 65vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-image: url('https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(15, 40, 56, 0.88);
+        }
+        
+        .hero h1, .hero p, .hero-buttons {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 900;
+        }
+        .hero h1 i {
+            color: var(--accent-gold);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: var(--light-blue);
+            font-weight: 500;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .hero-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 0.9rem 1.8rem;
+            border-radius: 50px;
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+            will-change: transform;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .hero-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        
+        .call-btn {
+            background: var(--call-green);
+            animation: pulse 2s infinite;
+        }
+        
+        .whatsapp-btn {
+            background: var(--whatsapp-green);
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .services {
+            padding: 5rem 2rem;
+            background: var(--soft-gray);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary-blue);
+            font-size: 2rem;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--accent-gold);
+            margin: 0.5rem auto 0;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+            border-top: 4px solid var(--accent-gold);
+            will-change: transform;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--accent-gold);
+            margin-bottom: 1rem;
+        }
+        
+        .service-list {
+            padding-right: 20px;
+            line-height: 1.9;
+            font-size: 1rem;
+        }
+        
+        .service-list li {
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-right: 30px;
+        }
+        
+        .service-list li::before {
+            content: "✓";
+            color: var(--call-green);
+            font-weight: bold;
+            position: absolute;
+            right: 0;
+        }
+        
+        .floating-btns {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            display: flex;
+            flex-direction: column;
+            z-index: 1000;
+            gap: 1rem;
+        }
+        
+        .floating-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 1.1rem 2rem;
+            border-radius: 50px;
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .floating-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        .floating-call {
+            background: var(--call-green);
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+        }
+        
+        .floating-whatsapp {
+            background: var(--whatsapp-green);
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+        }
+        
+        .why-us {
+            padding: 5rem 2rem;
+            background: white;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 3rem auto 0;
+        }
+        
+        .feature-item {
+            text-align: center;
+            padding: 1.5rem;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--accent-teal);
+            margin-bottom: 1rem;
+        }
+        
+        .simple-footer {
+            background: var(--primary-blue);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        .simple-footer p {
+            margin: 0.5rem 0;
+            color: var(--light-blue);
+        }
+        
+        .footer-phone {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .footer-phone:hover {
+            transform: scale(1.05);
+            color: var(--call-green);
+        }
+        
+        .search-tags {
+            background-color: #f8f9fa;
+            padding: 25px;
+            text-align: center;
+            margin-top: 30px;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .service-tag {
+            background: linear-gradient(135deg, #1A3A4A 0%, #6B8C9E 100%);
+            padding: 10px 20px;
+            border-radius: 30px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: 2px solid #D4A373;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            cursor: default;
+            transition: transform 0.2s;
+        }
+        
+        .service-tag:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .types-section {
+            padding: 5rem 2rem;
+            background: linear-gradient(to bottom, var(--soft-gray), white);
+        }
+        
+        .types-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .type-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+            border-bottom: 3px solid var(--accent-teal);
+        }
+        
+        .type-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .packages {
+            padding: 5rem 2rem;
+            background: var(--soft-gray);
+        }
+        
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .package-card {
+            background: white;
+            padding: 2.5rem 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: transform 0.3s;
+            border-top: 4px solid var(--accent-teal);
+        }
+        
+        .package-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .package-title {
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 1.5rem;
+        }
+        
+        .package-price {
+            font-size: 1.3rem;
+            color: var(--accent-gold);
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+        
+        .package-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+        
+        .package-features li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .package-btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: var(--call-green);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .package-btn:hover {
+            background: #1e7e34;
+            transform: scale(1.05);
+        }
+        
+        .testimonials {
+            padding: 5rem 2rem;
+            background: white;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .testimonial-card {
+            background: var(--soft-gray);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            color: var(--accent-teal);
+        }
+        
+        .contact-form {
+            padding: 5rem 2rem;
+            background: var(--soft-gray);
+        }
+        
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background: var(--call-green);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 100%;
+        }
+        
+        .submit-btn:hover {
+            background: #1e7e34;
+            transform: scale(1.02);
+        }
+        
+        .hours-badge {
+            background: var(--call-green);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 30px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 1rem;
+            animation: pulse 2s infinite;
+            border: 2px solid #fff;
+        }
+        
+        .contact-info {
+            background: var(--light-blue);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 2rem;
+            border-right: 5px solid var(--accent-teal);
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding: 5rem 1rem 6rem;
+                min-height: 55vh;
+            }
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .services, .packages, .why-us, .testimonials, .contact-form, .types-section {
+                padding: 3rem 1rem;
+            }
+            .floating-btns {
+                bottom: 1rem;
+                right: 1rem;
+            }
+            .floating-btn {
+                padding: 0.9rem 1.5rem;
+                font-size: 0.9rem;
+            }
+            .navbar {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            .logo {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="scrolling-banner">
+        <div class="scrolling-content">
+            🎨 صباغ الكويت | أفضل صباغ خارجي وداخلي | اصباغ وديكورات | دهانات حديثة | ديكورات جبس | عزل حراري ومائي | 📞 60725004 | خدمة جميع مناطق الكويت
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">🎨 <span>صباغ الكويت</span> | شركة فرصة للديكور</div>
+        <div class="phone-display" onclick="makePhoneCall('60725004')">
+            <i class="fas fa-phone"></i> 60725004
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hours-badge">
+            <i class="fas fa-paint-roller"></i> صباغ الكويت - صباغ خارجي وداخلي - اصباغ وديكورات
+        </div>
+        <h1>صباغ الكويت | أفضل صباغ خارجي وداخلي | 60725004</h1>
+        <p>أفضل صباغ في الكويت، نقدم صباغ خارجي وداخلي، اصباغ وديكورات عصرية، دهانات داخلية وخارجية، ديكورات جبس، ورق جدران، وعزل حراري ومائي. نخدم جميع مناطق الكويت بجودة عالية وأسعار منافسة.</p>
+        <div class="hero-buttons">
+            <button class="hero-btn call-btn" onclick="makePhoneCall('60725004')">
+                <i class="fas fa-phone-volume"></i>
+                اتصل الآن
+            </button>
+            <button class="hero-btn whatsapp-btn" onclick="trackWhatsAppClick('https://wa.me/96560725004')">
+                <i class="fab fa-whatsapp"></i>
+                واتساب فوري
+            </button>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2 class="section-title">خدمات صباغ الكويت المتخصصة</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-paint-brush service-icon"></i>
+                <h3>صباغ خارجي وداخلي - دهانات احترافية</h3>
+                <ul class="service-list">
+                    <li>صباغ خارجي للمنازل والفلل والمباني التجارية</li>
+                    <li>صباغ داخلي بجودة عالية وتشطيبات ممتازة</li>
+                    <li>دهانات داخلية وخارجية بألوان حديثة</li>
+                    <li>استخدام مواد دهان عالية الجودة</li>
+                    <li>تجهيز الجدران والأسقف قبل الدهان</li>
+                    <li>تشطيب دقيق واحترافي</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-couch service-icon"></i>
+                <h3>اصباغ وديكورات - ديكورات جبس وورق جدران</h3>
+                <ul class="service-list">
+                    <li>تصميم ديكورات جبس حديثة وفاخرة</li>
+                    <li>تركيب ورق جدران بأشكال ونقوش مختلفة</li>
+                    <li>ديكورات أسقف وجدران مميزة</li>
+                    <li>إضاءة مخفية وديكورات عصرية</li>
+                    <li>استشارات ديكور مجانية</li>
+                    <li>تنفيذ سريع ومتقن</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-temperature-low service-icon"></i>
+                <h3>عزل حراري ومائي - حماية المباني</h3>
+                <ul class="service-list">
+                    <li>عزل حراري للأسطح والجدران الخارجية</li>
+                    <li>عزل مائي للحمامات والمطابخ والأسطح</li>
+                    <li>حماية المباني من الرطوبة والحرارة</li>
+                    <li>مواد عزل عالية الجودة</li>
+                    <li>توفير الطاقة وتحسين الراحة</li>
+                    <li>ضمان طويل الأمد</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="types-section">
+        <h2 class="section-title">جميع خدمات صباغ الكويت</h2>
+        <div class="types-grid">
+            <div class="type-item"><h3>صباغ خارجي</h3><p>دهانات خارجية مقاومة للعوامل الجوية</p></div>
+            <div class="type-item"><h3>صباغ داخلي</h3><p>دهانات داخلية بتشطيبات ناعمة وأنيقة</p></div>
+            <div class="type-item"><h3>دهانات حديثة</h3><p>ألوان عصرية ومتنوعة تناسب جميع الأذواق</p></div>
+            <div class="type-item"><h3>ديكورات جبس</h3><p>تصاميم جبسية فاخرة للمنازل والمكاتب</p></div>
+            <div class="type-item"><h3>ورق جدران</h3><p>تشكيلة واسعة من ورق الجدران الفاخر</p></div>
+            <div class="type-item"><h3>عزل حراري</h3><p>حماية المباني من الحرارة وتوفير الطاقة</p></div>
+            <div class="type-item"><h3>عزل مائي</h3><p>حماية الأسطح والحمامات من التسربات</p></div>
+            <div class="type-item"><h3>ديكورات منازل</h3><p>تصميم داخلي شامل وديكورات راقية</p></div>
+        </div>
+    </section>
+
+    <section class="why-us">
+        <h2 class="section-title">لماذا تختار صباغ الكويت؟</h2>
+        <div class="features">
+            <div class="feature-item"><i class="fas fa-check-circle feature-icon"></i><h3>خدمة 24 ساعة</h3><p>نعمل من 8 صباحاً حتى 10 مساءً لخدمتكم</p></div>
+            <div class="feature-item"><i class="fas fa-map-marker-alt feature-icon"></i><h3>تغطية جميع مناطق الكويت</h3><p>نخدم الجهراء، حولي، الفحيحيل وجميع المحافظات</p></div>
+            <div class="feature-item"><i class="fas fa-user-graduate feature-icon"></i><h3>فريق محترف</h3><p>عمالة مدربة على أعلى مستويات الدقة والإتقان</p></div>
+            <div class="feature-item"><i class="fas fa-tags feature-icon"></i><h3>أسعار مناسبة</h3><p>أسعار تنافسية وجودة ممتازة</p></div>
+        </div>
+    </section>
+
+    <section class="packages">
+        <h2 class="section-title">باقات صباغ الكويت</h2>
+        <div class="packages-grid">
+            <div class="package-card">
+                <h3 class="package-title">باقة صباغة أساسية</h3>
+                <div class="package-price">أسعار اقتصادية</div>
+                <ul class="package-features">
+                    <li>صباغ داخلي للجدران والأسقف</li>
+                    <li>تحضير وتجهيز الأسطح</li>
+                    <li>اختيار الألوان المناسبة</li>
+                    <li>تشطيب ممتاز بجودة عالية</li>
+                    <li>معاينة مجانية لتحديد التكلفة</li>
+                </ul>
+                <button class="package-btn" onclick="makePhoneCall('60725004')">طلب الخدمة</button>
+            </div>
+            <div class="package-card">
+                <h3 class="package-title">باقة ديكور متكاملة</h3>
+                <div class="package-price">عروض خاصة</div>
+                <ul class="package-features">
+                    <li>صباغ خارجي وداخلي</li>
+                    <li>ديكورات جبس حديثة</li>
+                    <li>ورق جدران فاخر</li>
+                    <li>دهانات مميزة وتشطيبات راقية</li>
+                    <li>تنفيذ سريع واحترافي</li>
+                </ul>
+                <button class="package-btn" onclick="makePhoneCall('60725004')">طلب الخدمة</button>
+            </div>
+            <div class="package-card">
+                <h3 class="package-title">باقة عزل وحماية</h3>
+                <div class="package-price">أفضل العروض</div>
+                <ul class="package-features">
+                    <li>عزل حراري للأسطح والجدران</li>
+                    <li>عزل مائي للحمامات والمطابخ</li>
+                    <li>حماية كاملة من الرطوبة</li>
+                    <li>مواد عزل عالية الجودة</li>
+                    <li>ضمان طويل الأمد</li>
+                </ul>
+                <button class="package-btn" onclick="makePhoneCall('60725004')">طلب الخدمة</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2 class="section-title">آراء عملائنا الكرام</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card"><p class="testimonial-text">"أفضل صباغ في الكويت، تعاملت مع صباغ الكويت لدهان منزلي، النتيجة مبهرة والعمالة محترفة جداً."</p><p class="testimonial-author">- فاطمة العازمي</p></div>
+            <div class="testimonial-card"><p class="testimonial-text">"صباغ خارجي وداخلي ممتاز، أنصح به بشدة. ديكورات جبس رائعة وأسعار مناسبة."</p><p class="testimonial-author">- عبدالله الخالدي</p></div>
+            <div class="testimonial-card"><p class="testimonial-text">"صباغ الكويت أبدع في تصميم منزلنا، عزل حراري ومائي ممتاز، شكراً لهم."</p><p class="testimonial-author">- نورا الشمري</p></div>
+        </div>
+    </section>
+
+    <section class="contact-form" id="contact">
+        <h2 class="section-title">اطلب صباغ الكويت الآن</h2>
+        <div class="form-container">
+            <form id="contactForm">
+                <div class="form-group"><label for="name">الاسم الكامل</label><input type="text" id="name" name="name" required></div>
+                <div class="form-group"><label for="phone">رقم الهاتف</label><input type="tel" id="phone" name="phone" required></div>
+                <div class="form-group"><label for="area">المنطقة بالكويت</label><input type="text" id="area" name="area" required></div>
+                <div class="form-group"><label for="service">نوع الخدمة المطلوبة</label>
+                    <select id="service" name="service" required>
+                        <option value="">اختر الخدمة</option>
+                        <option value="صباغ خارجي">صباغ خارجي</option>
+                        <option value="صباغ داخلي">صباغ داخلي</option>
+                        <option value="دهانات داخلية وخارجية">دهانات داخلية وخارجية</option>
+                        <option value="ديكورات جبس">ديكورات جبس</option>
+                        <option value="ورق جدران">ورق جدران</option>
+                        <option value="عزل حراري">عزل حراري</option>
+                        <option value="عزل مائي">عزل مائي</option>
+                        <option value="ديكورات منازل">ديكورات منازل</option>
+                    </select>
+                </div>
+                <div class="form-group"><label for="propertyType">نوع المكان</label>
+                    <select id="propertyType" name="propertyType"><option value="">اختر النوع</option><option value="منزل / شقة">منزل / شقة</option><option value="فيلا">فيلا</option><option value="مكتب / شركة">مكتب / شركة</option><option value="مبنى تجاري">مبنى تجاري</option></select>
+                </div>
+                <div class="form-group"><label for="message">تفاصيل الطلب (مساحة المكان، عدد الغرف، نوع الديكور المطلوب)</label><textarea id="message" name="message" placeholder="اذكر مساحة المكان، عدد الغرف، نوع الديكور أو الألوان المفضلة..."></textarea></div>
+                <button type="submit" class="submit-btn">اطلب خدمة فورية</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <i class="fas fa-clock"></i> <strong>ساعات العمل:</strong> من 8 صباحاً حتى 10 مساءً
+            <br><br>
+            <i class="fas fa-map-pin"></i> <strong>نخدم جميع مناطق الكويت</strong> | صباغ الكويت - صباغ خارجي وداخلي - اصباغ وديكورات
+        </div>
+    </section>
+
+    <div class="search-tags">
+        <h3>كلمات بحث شائعة عن صباغ الكويت</h3>
+        <div class="tags-container">
+            <span class="service-tag">صباغ الكويت</span>
+            <span class="service-tag">صباغ</span>
+            <span class="service-tag">صباغ خارجي</span>
+            <span class="service-tag">صباغ داخلي</span>
+            <span class="service-tag">اصباغ وديكورات</span>
+            <span class="service-tag">دهانات الكويت</span>
+            <span class="service-tag">ديكورات جبس</span>
+            <span class="service-tag">ورق جدران</span>
+            <span class="service-tag">عزل حراري</span>
+            <span class="service-tag">عزل مائي</span>
+            <span class="service-tag">صباغ شقق</span>
+            <span class="service-tag">صباغ فلل</span>
+            <span class="service-tag">ديكورات منازل</span>
+            <span class="service-tag">أفضل صباغ بالكويت</span>
+        </div>
+    </div>
+
+    <div class="floating-btns">
+        <button class="floating-btn floating-call" onclick="makePhoneCall('60725004')">
+            <i class="fas fa-phone-volume"></i> اتصال فوري
+        </button>
+        <button class="floating-btn floating-whatsapp" onclick="trackWhatsAppClick('https://wa.me/96560725004')">
+            <i class="fab fa-whatsapp"></i> واتساب
+        </button>
+    </div>
+
+    <div class="simple-footer">
+        <p>صباغ الكويت | أفضل صباغ خارجي وداخلي | اصباغ وديكورات في جميع مناطق الكويت | دهانات حديثة - ديكورات جبس - ورق جدران - عزل حراري ومائي</p>
+        <div class="footer-phone" onclick="makePhoneCall('60725004')"><i class="fas fa-phone"></i> 60725004</div>
+        <p>فريق محترف - خدمة فورية - أسعار مناسبة - تغطية جميع محافظات الكويت</p>
+        <p>جميع الحقوق محفوظة © 2026 صباغ الكويت - شركة فرصة للديكور</p>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            if (typeof gtag_report_conversion === 'function') {
+                gtag_report_conversion();
+            }
+            alert('شكراً لتواصلكم مع صباغ الكويت! سنقوم بالاتصال بكم لتأكيد الطلب وتحديد موعد الخدمة في أقرب وقت.');
+            this.reset();
+        });
+        
+        function makePhoneCall(phoneNumber) {
+            var cleanNumber = String(phoneNumber).replace(/[\s\-]/g, '');
+            if (!cleanNumber.startsWith('+') && !cleanNumber.startsWith('00')) {
+                if (cleanNumber.startsWith('965')) {
+                    cleanNumber = '+' + cleanNumber;
+                } else {
+                    cleanNumber = '+965' + cleanNumber;
+                }
+            }
+            var telUrl = 'tel:' + cleanNumber;
+            
+            if (typeof gtag_report_conversion === 'function') {
+                gtag_report_conversion(telUrl);
+            }
+            
+            setTimeout(function() {
+                window.location.href = telUrl;
+            }, 100);
+            return false;
+        }
+        
+        function trackWhatsAppClick(url) {
+            if (typeof gtag_report_conversion === 'function') {
+                gtag_report_conversion(url);
+            }
+            setTimeout(function() {
+                window.open(url, '_blank');
+            }, 100);
+            return false;
+        }
+        
+        var phoneElements = document.querySelectorAll('[onclick*="makePhoneCall"]');
+        phoneElements.forEach(function(el) {
+            el.addEventListener('touchstart', function(e) {
+                e.preventDefault();
+                var phoneNumber = this.getAttribute('onclick').match(/'([^']+)'/)[1];
+                makePhoneCall(phoneNumber);
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>
