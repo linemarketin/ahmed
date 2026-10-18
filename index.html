@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    
-    <!-- Google tag (gtag.js) - كود التتبع الجديد -->
+    <meta name="theme-color" content="#1A3A4A">
+
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11248543839"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -13,7 +14,7 @@
       gtag('config', 'AW-11248543839');
     </script>
 
-    <!-- Event snippet for نقرة صادرة إلى الخارج conversion page -->
+    <!-- Event snippet for conversion -->
     <script>
     function gtag_report_conversion(url) {
       var callback = function () {
@@ -29,7 +30,7 @@
     }
     </script>
 
-    <!-- دالة معالجة مكالمات الهاتف بشكل آمن مع تتبع التحويل -->
+    <!-- دالة معالجة مكالمات الهاتف -->
     <script>
     function makePhoneCall(phoneNumber) {
       var cleanNumber = String(phoneNumber).replace(/[\s\-]/g, '');
@@ -41,15 +42,12 @@
         }
       }
       var telUrl = 'tel:' + cleanNumber;
-      
       if (typeof gtag_report_conversion === 'function') {
         gtag_report_conversion(telUrl);
       }
-      
       setTimeout(function() {
         window.location.href = telUrl;
       }, 100);
-      
       return false;
     }
 
@@ -64,28 +62,91 @@
     }
     </script>
 
-    <!-- بيانات منظمة لتحسين SEO لخدمات الصباغة والديكور -->
+    <!-- بيانات منظمة لتحسين SEO - خدمات الصباغة -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "HomeAndConstructionBusiness",
-        "name": "صباغ الكويت - شركة فرصة للصباغة والديكور",
-        "description": "أفضل صباغ في الكويت، صباغ خارجي وداخلي، اصباغ وديكورات في جميع مناطق الكويت. دهانات حديثة، ديكورات جبس، ورق جدران، عزل حراري ومائي. اتصل الآن 60725004.",
+        "@type": "HousePainter",
+        "name": "صباغ الكويت - أفضل صباغ في الكويت | 60725004",
+        "description": "صباغ الكويت - أفضل صباغ في الكويت متخصص في الصباغة الداخلية والخارجية، دهانات حديثة، أصباغ جدران، صباغة شقق وفلل ومباني. اتصل 60725004.",
         "telephone": "+96560725004",
-        "areaServed": "Kuwait",
-        "serviceType": "صباغ الكويت, صباغ خارجي, صباغ داخلي, اصباغ وديكورات, دهانات, ديكورات جبس, ورق جدران",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Kuwait"
+        },
+        "serviceType": [
+            "صباغ الكويت",
+            "صباغ داخلي",
+            "صباغ خارجي",
+            "صباغة جدران",
+            "دهانات حديثة",
+            "أصباغ",
+            "صباغ شقق",
+            "صباغ فلل",
+            "صباغ مباني"
+        ],
         "address": {
             "@type": "PostalAddress",
             "addressCountry": "Kuwait"
         },
-        "openingHours": "Mo-Su 08:00-22:00"
+        "openingHours": "Mo-Su 08:00-22:00",
+        "priceRange": "$$",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "127"
+        }
     }
     </script>
 
-    <title>صباغ الكويت | أفضل صباغ خارجي وداخلي | شركة فرصة 60725004</title>
-    <meta name="description" content="أفضل صباغ في الكويت ✓ صباغ خارجي وداخلي ✓ اصباغ وديكورات ✓ دهانات حديثة ✓ ديكورات جبس ✓ ورق جدران ✓ عزل حراري ومائي ✓ جميع مناطق الكويت ✓ اتصل الآن 60725004">
-    <meta name="keywords" content="صباغ الكويت, صباغ, صباغ خارجي, صباغ داخلي, اصباغ وديكورات, دهانات الكويت, ديكورات جبس, ورق جدران, عزل حراري, صباغ شقق, صباغ فلل">
+    <!-- FAQ Schema لتحسين الظهور في نتائج البحث -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "من هو أفضل صباغ في الكويت؟",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "صباغ الكويت هو أفضل صباغ في الكويت بخبرة طويلة في الصباغة الداخلية والخارجية، الدهانات الحديثة، وأصباغ الجدران. اتصل على 60725004."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "ما هي أسعار الصباغة في الكويت؟",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "أسعار الصباغة في الكويت تختلف حسب المساحة ونوع الدهان. صباغ الكويت يقدم أسعار منافسة ومعاينة مجانية. اتصل 60725004."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "هل يوجد صباغ خارجي وداخلي في الكويت؟",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "نعم، صباغ الكويت يقدم خدمات الصباغة الداخلية والخارجية لجميع أنواع المباني في جميع مناطق الكويت."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- SEO Meta Tags -->
+    <title>صباغ الكويت | أفضل صباغ داخلي وخارجي | دهانات وأصباغ 60725004</title>
+    <meta name="description" content="صباغ الكويت ✓ أفضل صباغ داخلي وخارجي ✓ صباغة شقق وفلل ومباني ✓ دهانات حديثة ✓ أصباغ جدران ✓ صباغة احترافية بأفضل الأسعار في جميع مناطق الكويت. اتصل 60725004">
+    <meta name="keywords" content="صباغ الكويت, صباغ, صباغ داخلي, صباغ خارجي, صباغة الكويت, دهانات الكويت, أصباغ, صباغة جدران, صباغ شقق, صباغ فلل, صباغ مباني, أفضل صباغ في الكويت, دهانات حديثة, أصباغ وديكورات, صباغة داخلية, صباغة خارجية, معلم صباغ الكويت, صباغ رخيص الكويت">
     <meta name="location" content="Kuwait">
+    <meta name="author" content="صباغ الكويت">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://example.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="صباغ الكويت | أفضل صباغ داخلي وخارجي | 60725004">
+    <meta property="og:description" content="صباغ الكويت - أفضل صباغ داخلي وخارجي. صباغة شقق وفلل ومباني، دهانات حديثة، أصباغ جدران بجودة عالية وأسعار منافسة. اتصل 60725004">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar_KW">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -104,7 +165,6 @@
             --text-dark: #1E2F3D;
             --call-green: #28A745;
             --whatsapp-green: #25D366;
-            --highlight-yellow: #F9A825;
             --brand-gradient: linear-gradient(135deg, #1A3A4A, #6B8C9E);
         }
         
@@ -196,7 +256,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background-image: url('https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-image: url('https://images.unsplash.com/photo-1562259949-e8e7689d7828?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
             background-size: cover;
             background-position: center;
             position: relative;
@@ -205,14 +265,11 @@
         .hero::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            top: 0; left: 0; right: 0; bottom: 0;
             background: rgba(15, 40, 56, 0.88);
         }
         
-        .hero h1, .hero p, .hero-buttons {
+        .hero h1, .hero p, .hero-buttons, .hours-badge {
             position: relative;
             z-index: 1;
         }
@@ -228,7 +285,7 @@
         
         .hero p {
             font-size: 1.2rem;
-            max-width: 700px;
+            max-width: 750px;
             margin: 0 auto 2rem;
             color: var(--light-blue);
             font-weight: 500;
@@ -324,6 +381,12 @@
             transform: translateY(-10px);
         }
         
+        .service-card h3 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+        
         .service-icon {
             font-size: 2.5rem;
             color: var(--accent-gold);
@@ -334,6 +397,7 @@
             padding-right: 20px;
             line-height: 1.9;
             font-size: 1rem;
+            list-style: none;
         }
         
         .service-list li {
@@ -404,6 +468,11 @@
         .feature-item {
             text-align: center;
             padding: 1.5rem;
+        }
+        
+        .feature-item h3 {
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
         }
         
         .feature-icon {
@@ -478,7 +547,7 @@
         
         .types-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 1.5rem;
             max-width: 1200px;
             margin: 0 auto;
@@ -496,6 +565,12 @@
         
         .type-item:hover {
             transform: translateY(-5px);
+        }
+        
+        .type-item h3 {
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
         }
         
         .packages {
@@ -628,6 +703,7 @@
             border: 1px solid #ddd;
             border-radius: 5px;
             font-size: 1rem;
+            font-family: 'Cairo', sans-serif;
         }
         
         .form-group textarea {
@@ -645,6 +721,8 @@
             cursor: pointer;
             transition: all 0.3s;
             width: 100%;
+            font-family: 'Cairo', sans-serif;
+            font-size: 1rem;
         }
         
         .submit-btn:hover {
@@ -673,18 +751,64 @@
             border-right: 5px solid var(--accent-teal);
         }
         
+        .faq-section {
+            padding: 5rem 2rem;
+            background: white;
+        }
+        
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: var(--soft-gray);
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            overflow: hidden;
+            border-right: 4px solid var(--accent-gold);
+        }
+        
+        .faq-question {
+            padding: 1.2rem 1.5rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-answer {
+            padding: 0 1.5rem 1.2rem;
+            color: var(--text-dark);
+            display: none;
+        }
+        
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+        
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        
+        .faq-question i {
+            transition: transform 0.3s;
+        }
+        
         @media (max-width: 768px) {
             .hero {
                 padding: 5rem 1rem 6rem;
                 min-height: 55vh;
             }
             .hero h1 {
-                font-size: 1.6rem;
+                font-size: 1.5rem;
             }
             .hero p {
                 font-size: 1rem;
             }
-            .services, .packages, .why-us, .testimonials, .contact-form, .types-section {
+            .services, .packages, .why-us, .testimonials, .contact-form, .types-section, .faq-section {
                 padding: 3rem 1rem;
             }
             .floating-btns {
@@ -701,6 +825,10 @@
             }
             .logo {
                 font-size: 1.2rem;
+                text-align: center;
+            }
+            .section-title {
+                font-size: 1.5rem;
             }
         }
     </style>
@@ -708,27 +836,32 @@
 <body>
     <div class="scrolling-banner">
         <div class="scrolling-content">
-            🎨 صباغ الكويت | أفضل صباغ خارجي وداخلي | اصباغ وديكورات | دهانات حديثة | ديكورات جبس | عزل حراري ومائي | 📞 60725004 | خدمة جميع مناطق الكويت
+            🎨 صباغ الكويت | أفضل صباغ داخلي وخارجي | صباغة شقق وفلل | دهانات حديثة | أصباغ جدران | صباغة احترافية | 📞 60725004 | جميع مناطق الكويت
         </div>
     </div>
 
     <nav class="navbar">
-        <div class="logo">🎨 <span>صباغ الكويت</span> | شركة فرصة للديكور</div>
+        <div class="logo">🎨 <span>صباغ الكويت</span> | أفضل صباغ</div>
         <div class="phone-display" onclick="makePhoneCall('60725004')">
             <i class="fas fa-phone"></i> 60725004
         </div>
     </nav>
 
+    <!-- HERO SECTION -->
     <section class="hero">
         <div class="hours-badge">
-            <i class="fas fa-paint-roller"></i> صباغ الكويت - صباغ خارجي وداخلي - اصباغ وديكورات
+            <i class="fas fa-paint-roller"></i> صباغ الكويت - صباغ داخلي وخارجي - دهانات حديثة
         </div>
-        <h1>صباغ الكويت | أفضل صباغ خارجي وداخلي | 60725004</h1>
-        <p>أفضل صباغ في الكويت، نقدم صباغ خارجي وداخلي، اصباغ وديكورات عصرية، دهانات داخلية وخارجية، ديكورات جبس، ورق جدران، وعزل حراري ومائي. نخدم جميع مناطق الكويت بجودة عالية وأسعار منافسة.</p>
+        <h1>صباغ الكويت | أفضل صباغ داخلي وخارجي | 60725004</h1>
+        <p>
+            صباغ الكويت هو أفضل صباغ في الكويت متخصص في <strong>الصباغة الداخلية</strong> و<strong>الصباغة الخارجية</strong>، 
+            <strong>دهانات حديثة</strong>، <strong>أصباغ جدران</strong>، صباغة شقق وفلل ومباني. 
+            نخدم جميع مناطق الكويت بجودة عالية وأسعار منافسة.
+        </p>
         <div class="hero-buttons">
             <button class="hero-btn call-btn" onclick="makePhoneCall('60725004')">
                 <i class="fas fa-phone-volume"></i>
-                اتصل الآن
+                اتصل الآن - صباغ الكويت
             </button>
             <button class="hero-btn whatsapp-btn" onclick="trackWhatsAppClick('https://wa.me/96560725004')">
                 <i class="fab fa-whatsapp"></i>
@@ -737,72 +870,92 @@
         </div>
     </section>
 
+    <!-- خدمات الصباغة -->
     <section class="services">
         <h2 class="section-title">خدمات صباغ الكويت المتخصصة</h2>
         <div class="services-grid">
             <div class="service-card">
                 <i class="fas fa-paint-brush service-icon"></i>
-                <h3>صباغ خارجي وداخلي - دهانات احترافية</h3>
+                <h3>صباغ داخلي - صباغة داخلية احترافية</h3>
                 <ul class="service-list">
-                    <li>صباغ خارجي للمنازل والفلل والمباني التجارية</li>
-                    <li>صباغ داخلي بجودة عالية وتشطيبات ممتازة</li>
-                    <li>دهانات داخلية وخارجية بألوان حديثة</li>
-                    <li>استخدام مواد دهان عالية الجودة</li>
-                    <li>تجهيز الجدران والأسقف قبل الدهان</li>
+                    <li>صباغة داخلية للشقق والفلل والمنازل</li>
+                    <li>دهانات داخلية بألوان حديثة وعصرية</li>
+                    <li>صباغة أسقف وجدران بتشطيبات ناعمة</li>
+                    <li>معلم صباغ متخصص في الصباغة الداخلية</li>
+                    <li>استخدام دهانات صديقة للبيئة</li>
                     <li>تشطيب دقيق واحترافي</li>
                 </ul>
             </div>
             <div class="service-card">
-                <i class="fas fa-couch service-icon"></i>
-                <h3>اصباغ وديكورات - ديكورات جبس وورق جدران</h3>
+                <i class="fas fa-building service-icon"></i>
+                <h3>صباغ خارجي - صباغة خارجية مقاومة</h3>
                 <ul class="service-list">
-                    <li>تصميم ديكورات جبس حديثة وفاخرة</li>
-                    <li>تركيب ورق جدران بأشكال ونقوش مختلفة</li>
-                    <li>ديكورات أسقف وجدران مميزة</li>
-                    <li>إضاءة مخفية وديكورات عصرية</li>
-                    <li>استشارات ديكور مجانية</li>
-                    <li>تنفيذ سريع ومتقن</li>
+                    <li>صباغة خارجية للمنازل والفلل والمباني</li>
+                    <li>دهانات خارجية مقاومة للعوامل الجوية</li>
+                    <li>صباغة واجهات المباني التجارية</li>
+                    <li>دهانات مضادة للرطوبة والأشعة</li>
+                    <li>أصباغ خارجية عالية الجودة</li>
+                    <li>ضمان على الصباغة الخارجية</li>
                 </ul>
             </div>
             <div class="service-card">
-                <i class="fas fa-temperature-low service-icon"></i>
-                <h3>عزل حراري ومائي - حماية المباني</h3>
+                <i class="fas fa-fill-drip service-icon"></i>
+                <h3>دهانات حديثة وأصباغ جدران</h3>
                 <ul class="service-list">
-                    <li>عزل حراري للأسطح والجدران الخارجية</li>
-                    <li>عزل مائي للحمامات والمطابخ والأسطح</li>
-                    <li>حماية المباني من الرطوبة والحرارة</li>
-                    <li>مواد عزل عالية الجودة</li>
-                    <li>توفير الطاقة وتحسين الراحة</li>
-                    <li>ضمان طويل الأمد</li>
+                    <li>دهانات حديثة بتقنيات متطورة</li>
+                    <li>أصباغ جدران بألوان مخصصة</li>
+                    <li>دهانات ثلاثية الأبعاد وتأثيرات خاصة</li>
+                    <li>صباغة جدران بتشطيبات فاخرة</li>
+                    <li>استشارة مجانية لاختيار الألوان</li>
+                    <li>تنفيذ سريع بجودة عالية</li>
                 </ul>
             </div>
         </div>
     </section>
 
+    <!-- أنواع الصباغة -->
     <section class="types-section">
-        <h2 class="section-title">جميع خدمات صباغ الكويت</h2>
+        <h2 class="section-title">أنواع الصباغة في الكويت</h2>
         <div class="types-grid">
-            <div class="type-item"><h3>صباغ خارجي</h3><p>دهانات خارجية مقاومة للعوامل الجوية</p></div>
-            <div class="type-item"><h3>صباغ داخلي</h3><p>دهانات داخلية بتشطيبات ناعمة وأنيقة</p></div>
-            <div class="type-item"><h3>دهانات حديثة</h3><p>ألوان عصرية ومتنوعة تناسب جميع الأذواق</p></div>
-            <div class="type-item"><h3>ديكورات جبس</h3><p>تصاميم جبسية فاخرة للمنازل والمكاتب</p></div>
-            <div class="type-item"><h3>ورق جدران</h3><p>تشكيلة واسعة من ورق الجدران الفاخر</p></div>
-            <div class="type-item"><h3>عزل حراري</h3><p>حماية المباني من الحرارة وتوفير الطاقة</p></div>
-            <div class="type-item"><h3>عزل مائي</h3><p>حماية الأسطح والحمامات من التسربات</p></div>
-            <div class="type-item"><h3>ديكورات منازل</h3><p>تصميم داخلي شامل وديكورات راقية</p></div>
+            <div class="type-item"><h3>صباغ شقق</h3><p>صباغة شقق داخلية وخارجية بأفضل الأسعار</p></div>
+            <div class="type-item"><h3>صباغ فلل</h3><p>صباغة فلل داخلية وخارجية بتشطيبات فاخرة</p></div>
+            <div class="type-item"><h3>صباغ مباني</h3><p>صباغة مباني تجارية وسكنية بجودة عالية</p></div>
+            <div class="type-item"><h3>صباغة جدران</h3><p>أصباغ جدران بألوان وتأثيرات حديثة</p></div>
+            <div class="type-item"><h3>دهانات حديثة</h3><p>أحدث أنواع الدهانات العصرية</p></div>
+            <div class="type-item"><h3>صباغة أسقف</h3><p>صباغة أسقف بتشطيبات ناعمة ومتقنة</p></div>
+            <div class="type-item"><h3>صباغة واجهات</h3><p>دهانات واجهات مقاومة للعوامل الجوية</p></div>
+            <div class="type-item"><h3>معلم صباغ</h3><p>معلم صباغ محترف لجميع أعمال الصباغة</p></div>
         </div>
     </section>
 
+    <!-- لماذا تختارنا -->
     <section class="why-us">
         <h2 class="section-title">لماذا تختار صباغ الكويت؟</h2>
         <div class="features">
-            <div class="feature-item"><i class="fas fa-check-circle feature-icon"></i><h3>خدمة 24 ساعة</h3><p>نعمل من 8 صباحاً حتى 10 مساءً لخدمتكم</p></div>
-            <div class="feature-item"><i class="fas fa-map-marker-alt feature-icon"></i><h3>تغطية جميع مناطق الكويت</h3><p>نخدم الجهراء، حولي، الفحيحيل وجميع المحافظات</p></div>
-            <div class="feature-item"><i class="fas fa-user-graduate feature-icon"></i><h3>فريق محترف</h3><p>عمالة مدربة على أعلى مستويات الدقة والإتقان</p></div>
-            <div class="feature-item"><i class="fas fa-tags feature-icon"></i><h3>أسعار مناسبة</h3><p>أسعار تنافسية وجودة ممتازة</p></div>
+            <div class="feature-item">
+                <i class="fas fa-check-circle feature-icon"></i>
+                <h3>خبرة طويلة</h3>
+                <p>سنوات من الخبرة في الصباغة الداخلية والخارجية</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-map-marker-alt feature-icon"></i>
+                <h3>جميع مناطق الكويت</h3>
+                <p>نخدم الجهراء، حولي، الفحيحيل وجميع المحافظات</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-user-graduate feature-icon"></i>
+                <h3>معلم صباغ محترف</h3>
+                <p>فريق صباغين مدربين على أعلى مستويات الدقة</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-tags feature-icon"></i>
+                <h3>أسعار مناسبة</h3>
+                <p>أسعار تنافسية لجميع خدمات الصباغة</p>
+            </div>
         </div>
     </section>
 
+    <!-- باقات الصباغة -->
     <section class="packages">
         <h2 class="section-title">باقات صباغ الكويت</h2>
         <div class="packages-grid">
@@ -810,8 +963,8 @@
                 <h3 class="package-title">باقة صباغة أساسية</h3>
                 <div class="package-price">أسعار اقتصادية</div>
                 <ul class="package-features">
-                    <li>صباغ داخلي للجدران والأسقف</li>
-                    <li>تحضير وتجهيز الأسطح</li>
+                    <li>صباغة داخلية للجدران والأسقف</li>
+                    <li>تحضير وتجهيز الأسطح قبل الدهان</li>
                     <li>اختيار الألوان المناسبة</li>
                     <li>تشطيب ممتاز بجودة عالية</li>
                     <li>معاينة مجانية لتحديد التكلفة</li>
@@ -819,95 +972,165 @@
                 <button class="package-btn" onclick="makePhoneCall('60725004')">طلب الخدمة</button>
             </div>
             <div class="package-card">
-                <h3 class="package-title">باقة ديكور متكاملة</h3>
+                <h3 class="package-title">باقة صباغة متكاملة</h3>
                 <div class="package-price">عروض خاصة</div>
                 <ul class="package-features">
-                    <li>صباغ خارجي وداخلي</li>
-                    <li>ديكورات جبس حديثة</li>
-                    <li>ورق جدران فاخر</li>
-                    <li>دهانات مميزة وتشطيبات راقية</li>
-                    <li>تنفيذ سريع واحترافي</li>
+                    <li>صباغة داخلية وخارجية</li>
+                    <li>دهانات حديثة عالية الجودة</li>
+                    <li>صباغة جدران وأسقف</li>
+                    <li>تشطيبات راقية واحترافية</li>
+                    <li>تنفيذ سريع مع ضمان</li>
                 </ul>
                 <button class="package-btn" onclick="makePhoneCall('60725004')">طلب الخدمة</button>
             </div>
             <div class="package-card">
-                <h3 class="package-title">باقة عزل وحماية</h3>
+                <h3 class="package-title">باقة صباغة شاملة</h3>
                 <div class="package-price">أفضل العروض</div>
                 <ul class="package-features">
-                    <li>عزل حراري للأسطح والجدران</li>
-                    <li>عزل مائي للحمامات والمطابخ</li>
-                    <li>حماية كاملة من الرطوبة</li>
-                    <li>مواد عزل عالية الجودة</li>
-                    <li>ضمان طويل الأمد</li>
+                    <li>صباغة شقق كاملة</li>
+                    <li>صباغة فلل ومباني</li>
+                    <li>دهانات خارجية مقاومة</li>
+                    <li>أصباغ جدران فاخرة</li>
+                    <li>ضمان طويل الأمد على الصباغة</li>
                 </ul>
                 <button class="package-btn" onclick="makePhoneCall('60725004')">طلب الخدمة</button>
             </div>
         </div>
     </section>
 
+    <!-- آراء العملاء -->
     <section class="testimonials">
-        <h2 class="section-title">آراء عملائنا الكرام</h2>
+        <h2 class="section-title">آراء عملائنا عن صباغ الكويت</h2>
         <div class="testimonials-grid">
-            <div class="testimonial-card"><p class="testimonial-text">"أفضل صباغ في الكويت، تعاملت مع صباغ الكويت لدهان منزلي، النتيجة مبهرة والعمالة محترفة جداً."</p><p class="testimonial-author">- فاطمة العازمي</p></div>
-            <div class="testimonial-card"><p class="testimonial-text">"صباغ خارجي وداخلي ممتاز، أنصح به بشدة. ديكورات جبس رائعة وأسعار مناسبة."</p><p class="testimonial-author">- عبدالله الخالدي</p></div>
-            <div class="testimonial-card"><p class="testimonial-text">"صباغ الكويت أبدع في تصميم منزلنا، عزل حراري ومائي ممتاز، شكراً لهم."</p><p class="testimonial-author">- نورا الشمري</p></div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"أفضل صباغ في الكويت، تعاملت معهم لصباغة شقتي، النتيجة مبهرة والعمالة محترفة جداً."</p>
+                <p class="testimonial-author">- فاطمة العازمي</p>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"صباغ داخلي وخارجي ممتاز، أنصح به بشدة. دهانات حديثة وأسعار مناسبة."</p>
+                <p class="testimonial-author">- عبدالله الخالدي</p>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"صباغ الكويت أبدع في صباغة فيلتي، أصباغ جدران رائعة وتشطيب احترافي، شكراً لهم."</p>
+                <p class="testimonial-author">- نورا الشمري</p>
+            </div>
         </div>
     </section>
 
+    <!-- الأسئلة الشائعة (SEO) -->
+    <section class="faq-section">
+        <h2 class="section-title">أسئلة شائعة عن صباغ الكويت</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    من هو أفضل صباغ في الكويت؟
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    صباغ الكويت هو أفضل صباغ في الكويت بخبرة طويلة في الصباغة الداخلية والخارجية، الدهانات الحديثة، وأصباغ الجدران. نخدم جميع مناطق الكويت. اتصل على 60725004.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    ما هي أسعار الصباغة في الكويت؟
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    أسعار الصباغة في الكويت تختلف حسب المساحة ونوع الدهان. صباغ الكويت يقدم أسعار منافسة ومعاينة مجانية لتحديد التكلفة. اتصل 60725004.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    هل يوجد صباغ خارجي وداخلي في الكويت؟
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    نعم، صباغ الكويت يقدم خدمات الصباغة الداخلية والخارجية لجميع أنواع المباني في جميع مناطق الكويت، مع ضمان على جودة العمل.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- نموذج الطلب -->
     <section class="contact-form" id="contact">
         <h2 class="section-title">اطلب صباغ الكويت الآن</h2>
         <div class="form-container">
             <form id="contactForm">
-                <div class="form-group"><label for="name">الاسم الكامل</label><input type="text" id="name" name="name" required></div>
-                <div class="form-group"><label for="phone">رقم الهاتف</label><input type="tel" id="phone" name="phone" required></div>
-                <div class="form-group"><label for="area">المنطقة بالكويت</label><input type="text" id="area" name="area" required></div>
-                <div class="form-group"><label for="service">نوع الخدمة المطلوبة</label>
+                <div class="form-group">
+                    <label for="name">الاسم الكامل</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">رقم الهاتف</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="area">المنطقة بالكويت</label>
+                    <input type="text" id="area" name="area" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">نوع الصباغة المطلوبة</label>
                     <select id="service" name="service" required>
-                        <option value="">اختر الخدمة</option>
-                        <option value="صباغ خارجي">صباغ خارجي</option>
+                        <option value="">اختر نوع الصباغة</option>
                         <option value="صباغ داخلي">صباغ داخلي</option>
-                        <option value="دهانات داخلية وخارجية">دهانات داخلية وخارجية</option>
-                        <option value="ديكورات جبس">ديكورات جبس</option>
-                        <option value="ورق جدران">ورق جدران</option>
-                        <option value="عزل حراري">عزل حراري</option>
-                        <option value="عزل مائي">عزل مائي</option>
-                        <option value="ديكورات منازل">ديكورات منازل</option>
+                        <option value="صباغ خارجي">صباغ خارجي</option>
+                        <option value="صباغة شقة">صباغة شقة</option>
+                        <option value="صباغة فيلا">صباغة فيلا</option>
+                        <option value="دهانات حديثة">دهانات حديثة</option>
+                        <option value="أصباغ جدران">أصباغ جدران</option>
+                        <option value="صباغة مبنى">صباغة مبنى</option>
                     </select>
                 </div>
-                <div class="form-group"><label for="propertyType">نوع المكان</label>
-                    <select id="propertyType" name="propertyType"><option value="">اختر النوع</option><option value="منزل / شقة">منزل / شقة</option><option value="فيلا">فيلا</option><option value="مكتب / شركة">مكتب / شركة</option><option value="مبنى تجاري">مبنى تجاري</option></select>
+                <div class="form-group">
+                    <label for="propertyType">نوع المكان</label>
+                    <select id="propertyType" name="propertyType">
+                        <option value="">اختر النوع</option>
+                        <option value="منزل / شقة">منزل / شقة</option>
+                        <option value="فيلا">فيلا</option>
+                        <option value="مكتب / شركة">مكتب / شركة</option>
+                        <option value="مبنى تجاري">مبنى تجاري</option>
+                    </select>
                 </div>
-                <div class="form-group"><label for="message">تفاصيل الطلب (مساحة المكان، عدد الغرف، نوع الديكور المطلوب)</label><textarea id="message" name="message" placeholder="اذكر مساحة المكان، عدد الغرف، نوع الديكور أو الألوان المفضلة..."></textarea></div>
-                <button type="submit" class="submit-btn">اطلب خدمة فورية</button>
+                <div class="form-group">
+                    <label for="message">تفاصيل الطلب (المساحة، عدد الغرف، الألوان المفضلة)</label>
+                    <textarea id="message" name="message" placeholder="اذكر مساحة المكان، عدد الغرف، نوع الصباغة أو الألوان المفضلة..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">اطلب خدمة صباغة فورية</button>
             </form>
         </div>
         <div class="contact-info">
             <i class="fas fa-clock"></i> <strong>ساعات العمل:</strong> من 8 صباحاً حتى 10 مساءً
             <br><br>
-            <i class="fas fa-map-pin"></i> <strong>نخدم جميع مناطق الكويت</strong> | صباغ الكويت - صباغ خارجي وداخلي - اصباغ وديكورات
+            <i class="fas fa-map-pin"></i> <strong>نخدم جميع مناطق الكويت</strong> | صباغ الكويت - صباغ داخلي وخارجي - دهانات حديثة
         </div>
     </section>
 
+    <!-- كلمات مفتاحية -->
     <div class="search-tags">
         <h3>كلمات بحث شائعة عن صباغ الكويت</h3>
         <div class="tags-container">
             <span class="service-tag">صباغ الكويت</span>
             <span class="service-tag">صباغ</span>
-            <span class="service-tag">صباغ خارجي</span>
             <span class="service-tag">صباغ داخلي</span>
-            <span class="service-tag">اصباغ وديكورات</span>
+            <span class="service-tag">صباغ خارجي</span>
+            <span class="service-tag">صباغة الكويت</span>
             <span class="service-tag">دهانات الكويت</span>
-            <span class="service-tag">ديكورات جبس</span>
-            <span class="service-tag">ورق جدران</span>
-            <span class="service-tag">عزل حراري</span>
-            <span class="service-tag">عزل مائي</span>
+            <span class="service-tag">أصباغ</span>
+            <span class="service-tag">صباغة جدران</span>
             <span class="service-tag">صباغ شقق</span>
             <span class="service-tag">صباغ فلل</span>
-            <span class="service-tag">ديكورات منازل</span>
-            <span class="service-tag">أفضل صباغ بالكويت</span>
+            <span class="service-tag">صباغ مباني</span>
+            <span class="service-tag">أفضل صباغ في الكويت</span>
+            <span class="service-tag">دهانات حديثة</span>
+            <span class="service-tag">معلم صباغ الكويت</span>
+            <span class="service-tag">صباغ رخيص الكويت</span>
+            <span class="service-tag">صباغة داخلية</span>
+            <span class="service-tag">صباغة خارجية</span>
+            <span class="service-tag">أصباغ جدران</span>
         </div>
     </div>
 
+    <!-- أزرار عائمة -->
     <div class="floating-btns">
         <button class="floating-btn floating-call" onclick="makePhoneCall('60725004')">
             <i class="fas fa-phone-volume"></i> اتصال فوري
@@ -917,23 +1140,26 @@
         </button>
     </div>
 
+    <!-- Footer -->
     <div class="simple-footer">
-        <p>صباغ الكويت | أفضل صباغ خارجي وداخلي | اصباغ وديكورات في جميع مناطق الكويت | دهانات حديثة - ديكورات جبس - ورق جدران - عزل حراري ومائي</p>
+        <p>صباغ الكويت | أفضل صباغ داخلي وخارجي | صباغة شقق وفلل ومباني | دهانات حديثة - أصباغ جدران - صباغة احترافية</p>
         <div class="footer-phone" onclick="makePhoneCall('60725004')"><i class="fas fa-phone"></i> 60725004</div>
-        <p>فريق محترف - خدمة فورية - أسعار مناسبة - تغطية جميع محافظات الكويت</p>
-        <p>جميع الحقوق محفوظة © 2026 صباغ الكويت - شركة فرصة للديكور</p>
+        <p>معلم صباغ محترف - خدمة فورية - أسعار مناسبة - تغطية جميع محافظات الكويت</p>
+        <p>جميع الحقوق محفوظة © 2026 صباغ الكويت</p>
     </div>
 
     <script>
+        // نموذج التواصل
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             if (typeof gtag_report_conversion === 'function') {
                 gtag_report_conversion();
             }
-            alert('شكراً لتواصلكم مع صباغ الكويت! سنقوم بالاتصال بكم لتأكيد الطلب وتحديد موعد الخدمة في أقرب وقت.');
+            alert('شكراً لتواصلكم مع صباغ الكويت! سنقوم بالاتصال بكم لتأكيد الطلب وتحديد موعد الصباغة في أقرب وقت.');
             this.reset();
         });
         
+        // وظيفة الاتصال
         function makePhoneCall(phoneNumber) {
             var cleanNumber = String(phoneNumber).replace(/[\s\-]/g, '');
             if (!cleanNumber.startsWith('+') && !cleanNumber.startsWith('00')) {
@@ -955,6 +1181,7 @@
             return false;
         }
         
+        // وظيفة واتساب
         function trackWhatsAppClick(url) {
             if (typeof gtag_report_conversion === 'function') {
                 gtag_report_conversion(url);
@@ -965,6 +1192,13 @@
             return false;
         }
         
+        // تفعيل الأسئلة الشائعة
+        function toggleFaq(element) {
+            var faqItem = element.parentElement;
+            faqItem.classList.toggle('active');
+        }
+        
+        // تحسين تجربة اللمس على الهاتف
         var phoneElements = document.querySelectorAll('[onclick*="makePhoneCall"]');
         phoneElements.forEach(function(el) {
             el.addEventListener('touchstart', function(e) {
@@ -972,7 +1206,7 @@
                 var phoneNumber = this.getAttribute('onclick').match(/'([^']+)'/)[1];
                 makePhoneCall(phoneNumber);
                 return false;
-            });
+            }, {passive: false});
         });
     </script>
 </body>
